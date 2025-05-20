@@ -1,0 +1,142 @@
+.discover-page {
+    padding: 20px;
+}
+
+.page-title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.search-input:focus {
+    border-color: var(--primary-color);
+}
+
+.users-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-container {
+    text-align: center;
+    padding: 40px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-container .error-message {
+    margin-bottom: 16px;
+    color: var(--error-color);
+}
+
+.discover-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.discover-tabs button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    padding: 10px 28px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.discover-tabs button.active,
+.discover-tabs button:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.hashtags-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 18px 18px 10px 18px;
+}
+
+.hashtag-list-discover {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+}
+
+.hashtag-item-discover {
+    background: #f1f3f6;
+    color: var(--primary-color);
+    border-radius: 16px;
+    padding: 7px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+    display: inline-block;
+}
+
+.hashtag-item-discover:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.hashtag-item-discover.selected {
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(24, 119, 242, 0.10);
+}
+
+.hashtag-posts-container {
+    margin-top: 28px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(24, 119, 242, 0.08);
+    padding: 24px 18px 10px 18px;
+}
+
+.hashtag-posts-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: var(--primary-color);
+}
+
+.hashtag-highlight {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.empty-message {
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 32px 0 0 0;
+}
