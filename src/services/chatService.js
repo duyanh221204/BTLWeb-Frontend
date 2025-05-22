@@ -39,5 +39,5 @@ export const getUnreadConversations = async () =>
 export const getWebSocketUrl = (conversationId) =>
 {
     const token = localStorage.getItem("token");
-    return `ws://127.0.0.1:8000/api/chats/ws/${conversationId}?token=${token}`;
+    return `wss://btlweb-backend-production.up.railway.app/api/chats/ws/${conversationId}?token=${token}`;
 };
