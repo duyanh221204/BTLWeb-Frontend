@@ -15,5 +15,5 @@ export const markNotificationAsRead = async (notificationId) =>
 export const getNotificationWsUrl = () =>
 {
     const token = localStorage.getItem("token");
-    return `ws://127.0.0.1:8000/api/notifications/ws?token=${token}`;
+    return `wss://btlweb-backend-production.up.railway.app/api/notifications/ws?token=${token}`;
 };
